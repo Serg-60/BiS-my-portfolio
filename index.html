@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrii Kovalenko - Front-End Developer. Створюю сучасні, швидкі та адаптивні вебсайти з акцентом на дизайн та якісний код.">
+    <meta name="keywords" content="Front-End Developer, Web Design, HTML, CSS, JavaScript, Kyiv, Ukraine">
+    <meta name="author" content="Andrii Kovalenko">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Andrii Kovalenko - Front-End Developer">
+    <meta property="og:description" content="Сучасні вебсайти. Чистий код. Потужний дизайн.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andrii-kovalenko.dev">
+    <meta property="og:image" content="https://andrii-kovalenko.dev/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sergii Bsletskii - Front-End Developer">
+    <meta name="twitter:description" content="Сучасні вебсайти. Чистий код. Потужний дизайн.">
+    
+    <title>Сергій Білецький/Sergii Biletskii - Front-End Developer | Modern Web Design</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%2300d4ff' width='32' height='32'/><text x='50%' y='50%' font-size='20' font-weight='bold' fill='%230f0f0f' text-anchor='middle' dominant-baseline='central'>A</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+
+               <img class="logo"               
+                    src="img/logo-BiS-mini.png"
+                    data-i18n-alt="aboutImgAlt"
+                    alt="Logo"
+                />
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Перемикач меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link">Про мене</a></li>
+                    <li><a href="#skills" class="nav-link">Навички</a></li>
+                    <li><a href="#services" class="nav-link">Послуги</a></li>
+                    <li><a href="#projects" class="nav-link">Проєкти</a></li>
+                    <li><a href="#contact" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="header">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Sergii Biletskii
+                </h1>
+                <p class="hero-subtitle">Front-End Developer</p>
+                <p class="hero-tagline">Modern websites. Clean code. Strong design.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            
+<div style="padding-left: 6vw" >
+            <img class="portrait"
+            
+            src="img/фото-портрет.png"
+            data-i18n-alt="aboutImgAlt"
+            alt="Photo Sergii Biletskii"
+          />
+
+
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Про мене</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Я Front-End Developer, який створює сучасні адаптивні вебсайти для малого бізнесу, брендів та приватних спеціалістів.</p>
+                    
+                    <p>Працюю з HTML, CSS та JavaScript. Особливу увагу приділяю сучасному дизайну, адаптивності, швидкості завантаження, анімаціям та зручності користування сайтом.</p>
+                    
+                    <p>Постійно розвиваю свої навички, слідкую за трендами web-розвитку та створюю власні проєкти для практики й портфоліо. Базуюся в Cherkasy, Ukraine, але готовий брати freelance-проєкти з будь-якої точки світу.</p>
+                    
+                    <p class="about-highlight">Статус: Available for freelance projects</p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">4+</h3>
+                        <p class="stat-label">Completed Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">2+</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">2+</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Навички</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Семантична розмітка, доступність, SEO</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Флексбокс, Грид, Анімації, Адаптивність</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>DOM маніпуляція, Асинхронний код, ES6+</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first підхід, Адаптація під всі пристрої</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Animations</h3>
+                    <p>CSS анімації, Переходи, Інтерактивні ефекти</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Контроль версій, Комітування, Colaboration</p>
+                </div>
+                <div class="skill-card">
+                    <h3>SEO & Accessibility</h3>
+                    <p>Базова SEO-оптимізація, WCAG-стандарти</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Performance</h3>
+                    <p>Оптимізація медіа, Lazy loading, CLS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Послуги</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3>Створення Landing Page</h3>
+                    <p>Сучасні, швидкі й адаптивні односторінкові сайти для вашого бізнесу</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Адаптивна верстка</h3>
+                    <p>Сайти, які чудово виглядають на будь-якому пристрої</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>HTML/CSS/JavaScript</h3>
+                    <p>Чистий, семантичний код з найкращих практик розробки</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Редизайн існуючих сайтів</h3>
+                    <p>Оновлення дизайну та функціональності вашого сайту</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Додавання анімацій</h3>
+                    <p>Плавні переходи та ефектні анімації для кращої UX</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📲</div>
+                    <h3>Оптимізація мобільної версії</h3>
+                    <p>Покращення швидкості та зручності на смартфонах</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Базова SEO-оптимізація</h3>
+                    <p>Покращення видимості сайту в пошукових системах</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h3>Інтеграція відео та медіа</h3>
+                    <p>Вбудовування та оптимізація медіа-контенту</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Мої Проєкти</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%2300d4ff;stop-opacity:0.1' /><stop offset='100%' style='stop-color:%2300d4ff;stop-opacity:0.3' /></linearGradient></defs><rect width='600' height='400' fill='%231a1a1a'/><rect width='600' height='400' fill='url(%23grad1)'/><text x='300' y='180' font-size='48' font-weight='bold' fill='%2300d4ff' text-anchor='middle'>CoffeeENTER</text><text x='300' y='240' font-size='20' fill='%23a0a0a0' text-anchor='middle'>Coffee Shop Landing Page</text></svg>" alt="CoffeeENTER - Coffee Shop Landing Page" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Coffee ENTER</h3>
+                        <p class="project-type">Coffee Shop Landing Page</p>
+                        <p class="project-description">Сучасний адаптивний сайт для кав'ярні з Hero-блоком, фоновим відео, анімаціями та оптимізацією медіа, багатомовність.</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Cloudinary</span>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://Serg-60.github.io/Coffe_ENTER/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://res.cloudinary.com/hplbm9n3/image/upload/v1787077443/CaffeeENTER_cover_xwgwyx.jpg" class="btn btn-small btn-secondary" target="_blank" rel="noopener noreferrer">Hero page</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%2300d4ff;stop-opacity:0.2' /><stop offset='100%' style='stop-color:%2300d4ff;stop-opacity:0.4' /></linearGradient></defs><rect width='600' height='400' fill='%231a1a1a'/><rect width='600' height='400' fill='url(%23grad2)'/><text x='300' y='180' font-size='48' font-weight='bold' fill='%2300d4ff' text-anchor='middle'>AURA</text><text x='300' y='240' font-size='20' fill='%23a0a0a0' text-anchor='middle'>Massage Salon Business Website</text></svg>" alt="AURA - Massage Salon Business Website" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AURA Massage Salon</h3>
+                        <p class="project-type">Business Website</p>
+                        <p class="project-description">Преміальний корпоративний сайт із сучасним дизайном, презентацією послуг, інформацією про компанію, акцентом на довіру й стиль.
+</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Premium UI</span>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://Serg-60.github.io/AURA-Massage-Salon/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://res.cloudinary.com/hplbm9n3/image/upload/v1787077443/AURA-Vassage-Salon-cover_ioibng.jpg" class="btn btn-small btn-secondary" target="_blank" rel="noopener noreferrer">Hero page</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%2300d4ff;stop-opacity:0.15' /><stop offset='100%' style='stop-color:%2300d4ff;stop-opacity:0.35' /></linearGradient></defs><rect width='600' height='400' fill='%230f0f0f'/><rect width='600' height='400' fill='url(%23grad3)'/><text x='300' y='180' font-size='48' font-weight='bold' fill='%2300d4ff' text-anchor='middle'>FORGE</text><text x='300' y='240' font-size='20' fill='%23a0a0a0' text-anchor='middle'>Art Metal Premium Landing</text></svg>" alt="FORGE ART METAL - Premium Landing Page" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">FORGE ART METAL</h3>
+                        <p class="project-type">Premium Landing Page</p>
+                        <p class="project-description">Преміальний сайт для майстерні художнього кування. Темний дизайн, металеві текстури, фотографії робіт та ефектні анімації.</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Dark Design</span>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://Serg-60.github.io/Forge-ART-Metal/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://res.cloudinary.com/hplbm9n3/image/upload/v1787077443/og-cover_zqzd9e.jpg" class="btn btn-small btn-secondary">Hero page</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="workflow">
+        <div class="container">
+            <h2 class="section-title">Мій Процес Роботи</h2>
+            
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-number"></div>
+                    <h3>Обговорення ідеї</h3>
+                    <p>Слухаю вашу ідею, розумію цілі та цільову аудиторію вашого проєкту</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number"></div>
+                    <h3>Планування & Дизайн</h3>
+                    <p>Розробляю структуру сайту та візуальний концепт відповідно до вашого бренду</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number"></div>
+                    <h3>Розробка</h3>
+                    <p>Пишу чистий, семантичний код з використанням найкращих практик</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number"></div>
+                    <h3>Тестування & Оптимізація</h3>
+                    <p>Перевіряю на всіх пристроях, оптимізую швидкість та доступність</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number"></div>
+                    <h3>Деплой & Підтримка</h3>
+                    <p>Розміщую сайт на серверу і надаю підтримку після запуску</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Маєте ідею проєкту?</h2>
+            <p class="contact-subtitle">Розкажіть мені про ваш проєкт і давайте створимо щось сучасне та ефективне.</p>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Ваше ім'я" 
+                            required 
+                            aria-label="Ім'я"
+                        >
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Ваша email" 
+                            required 
+                            aria-label="Email"
+                        >
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Розкажіть про ваш проєкт" 
+                            rows="5" 
+                            required 
+                            aria-label="Повідомлення"
+                        ></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" aria-label="Відправити повідомлення">Send Message</button>
+                    <span class="form-message" id="formMessage"></span>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <h3>Email</h3>
+                        <a href="mailto:s.m.biletskii@gmail.com" class="contact-link">s.m.biletskii@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <h3>Telegram</h3>
+                        <a href="https://t.me/sbiletskii" class="contact-link" target="_blank" rel="noopener noreferrer">@sbiletskii</a>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <h3>Linkedin</h3>
+                        <a href="https://www.linkedin.com/in/sergey-bietskii-362413246" class="contact-link" target="_blank" rel="noopener noreferrer">iLnkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="logo"               
+                    src="img/logo-BiS-mini.png"
+                    data-i18n-alt="aboutImgAlt"
+                    alt="Logo"
+                />
+        <div class="container">
+            <p>&copy; 2026 All rights reserved.</p> 
+            <p class="footer-note">Designed & Developed with care by Sergii Biletskii<p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
