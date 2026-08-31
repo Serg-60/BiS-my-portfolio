@@ -1,7 +1,8 @@
 /**
  * Portfolio Website - JavaScript
  * Функціональність: меню, валідація форми, smooth scroll, lazy loading
- */
+ */(function () {
+  "use strict";
 
 // ============================================
 // MOBILE MENU TOGGLE
@@ -382,6 +383,7 @@ async function submitFormToServer(formData) {
         return { success: false, error: error.message };
     }
 }
+})();
 
 // ============================================
 // END OF SCRIPT
