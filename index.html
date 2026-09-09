@@ -11,9 +11,7 @@
     <meta property="og:title" content="Sergii Bsletskii - Front-End Developer">
     <meta property="og:description" content="Сучасні вебсайти. Чистий код. Потужний дизайн.">
     <meta property="og:type" content="website">
-    <!-- <meta property="og:url" content="https://andrii-kovalenko.dev">
-    <meta property="og:image" content="https://andrii-kovalenko.dev/og-image.png"> -->
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sergii Bsletskii - Front-End Developer">
@@ -243,10 +241,10 @@
                 <!-- Project 2 -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%2300d4ff;stop-opacity:0.2' /><stop offset='100%' style='stop-color:%2300d4ff;stop-opacity:0.4' /></linearGradient></defs><rect width='600' height='400' fill='%231a1a1a'/><rect width='600' height='400' fill='url(%23grad2)'/><text x='300' y='180' font-size='48' font-weight='bold' fill='%2300d4ff' text-anchor='middle'>AURA</text><text x='300' y='240' font-size='20' fill='%23a0a0a0' text-anchor='middle'>Massage Salon Business Website</text></svg>" alt="AURA - Massage Salon Business Website" loading="lazy" width="600" height="400">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%2300d4ff;stop-opacity:0.2' /><stop offset='100%' style='stop-color:%2300d4ff;stop-opacity:0.4' /></linearGradient></defs><rect width='600' height='400' fill='%231a1a1a'/><rect width='600' height='400' fill='url(%23grad2)'/><text x='300' y='180' font-size='48' font-weight='bold' fill='%2300d4ff' text-anchor='middle'>OLESYA</text><text x='300' y='240' font-size='20' fill='%23a0a0a0' text-anchor='middle'>Nail Art Studio</text></svg>" alt="OLESYA NAILS - Nail Art Studio" loading="lazy" width="600" height="400">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">AURA Massage Salon</h3>
+                        <h3 class="project-title">OLESYA-Nail Art Studio</h3>
                         <p class="project-type">Business Website</p>
                         <p class="project-description">Преміальний корпоративний сайт із сучасним дизайном, презентацією послуг, інформацією про компанію, акцентом на довіру й стиль.
 </p>
@@ -259,8 +257,8 @@
                         </div>
                         
                         <div class="project-buttons">
-                            <a href="https://Serg-60.github.io/AURA-Massage-Salon/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                            <a href="https://res.cloudinary.com/hplbm9n3/image/upload/v1787077443/AURA-Vassage-Salon-cover_ioibng.jpg" class="btn btn-small btn-secondary" target="_blank" rel="noopener noreferrer">Hero page</a>
+                            <a href="https://nails-salon-olesya.netlify.app/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://res.cloudinary.com/hplbm9n3/image/upload/v1788626408/Nail-Art-Studio_oiypzu.jpg" class="btn btn-small btn-secondary" target="_blank" rel="noopener noreferrer">Hero page</a>
                         </div>
                     </div>
                 </article>
@@ -328,74 +326,107 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Маєте ідею проєкту?</h2>
-            <p class="contact-subtitle">Розкажіть мені про ваш проєкт і давайте створимо щось сучасне та ефективне.</p>
-            
-            <div class="contact-wrapper">
-                <!-- Contact Form -->
-                <form class="contact-form" id="contactForm" novalidate>
-                    <div class="form-group">
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="name" 
-                            placeholder="Ваше ім'я" 
-                            required 
-                            aria-label="Ім'я"
-                        >
-                        <span class="error-message" id="nameError"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder="Ваша email" 
-                            required 
-                            aria-label="Email"
-                        >
-                        <span class="error-message" id="emailError"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            placeholder="Розкажіть про ваш проєкт" 
-                            rows="5" 
-                            required 
-                            aria-label="Повідомлення"
-                        ></textarea>
-                        <span class="error-message" id="messageError"></span>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary" aria-label="Відправити повідомлення">Send Message</button>
-                    <span class="form-message" id="formMessage"></span>
-                </form>
+ <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Маєте ідею проєкту?</h2>
+        <p class="contact-subtitle">Розкажіть мені про ваш проєкт і давайте створимо щось сучасне та ефективне.</p>
+        
+        <div class="contact-wrapper">
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="contactName" class="form-label">Ваше ім'я</label>
+                    <input 
+                        type="text" 
+                        id="contactName" 
+                        name="name" 
+                        placeholder="Ваше ім'я" 
+                        required 
+                        aria-label="Ім'я"
+                        minlength="2"
+                        maxlength="100"
+                    >
+                    <span class="error-message" id="nameError" aria-live="polite"></span>
+                </div>
 
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <div class="contact-method">
-                        <h3>Email</h3>
-                        <a href="mailto:s.m.biletskii@gmail.com" class="contact-link">s.m.biletskii@gmail.com</a>
-                    </div>
-                    
-                    <div class="contact-method">
-                        <h3>Telegram</h3>
-                        <a href="https://t.me/sbiletskii" class="contact-link" target="_blank" rel="noopener noreferrer">@sbiletskii</a>
-                    </div>
-                    
-                    <div class="contact-method">
-                        <h3>Linkedin</h3>
-                        <a href="https://www.linkedin.com/in/sergey-bietskii-362413246" class="contact-link" target="_blank" rel="noopener noreferrer">iLnkedin</a>
-                    </div>
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="contactEmail" class="form-label">Ваша email</label>
+                    <input 
+                        type="email" 
+                        id="contactEmail" 
+                        name="email" 
+                        placeholder="Ваша email" 
+                        required 
+                        aria-label="Email"
+                        maxlength="255"
+                    >
+                    <span class="error-message" id="emailError" aria-live="polite"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="contactMessage" class="form-label">Розкажіть про ваш проєкт</label>
+                    <textarea 
+                        id="contactMessage" 
+                        name="message" 
+                        placeholder="Розкажіть про ваш проєкт" 
+                        rows="5" 
+                        required 
+                        aria-label="Повідомлення"
+                        minlength="10"
+                        maxlength="5000"
+                    ></textarea>
+                    <span class="error-message" id="messageError" aria-live="polite"></span>
+                </div>
+
+                <!-- Honeypot Field (Anti-spam) -->
+                <input 
+                    type="hidden" 
+                    name="website" 
+                    id="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                    value=""
+                >
+
+                <!-- Submit Button -->
+                <button 
+                    type="submit" 
+                    class="btn btn-primary" 
+                    id="submitBtn"
+                    aria-label="Відправити повідомлення"
+                >
+                    Send Message
+                </button>
+
+                <!-- Form Status Messages -->
+                <div class="form-message" id="formMessage" aria-live="polite" aria-atomic="true"></div>
+            </form>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <a href="mailto:s.m.biletskii@gmail.com" class="contact-link">s.m.biletskii@gmail.com</a>
+                </div>
+                
+                <div class="contact-method">
+                    <h3>Telegram</h3>
+                    <a href="https://t.me/sbiletskii" class="contact-link" target="_blank" rel="noopener noreferrer">@sbiletskii</a>
+                </div>
+                
+                <div class="contact-method">
+                    <h3>Phone</h3>
+                    <a href="tel:+380671234567" class="contact-link" title="Зателефонувати: +380 96 699 20 66">
+                       +380 96 699 20 66</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">

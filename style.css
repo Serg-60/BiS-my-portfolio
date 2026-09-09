@@ -104,6 +104,7 @@ h6 {
 
 h1 {
     font-size: var(--font-size-4xl);
+    height: 5rem;
 }
 
 h2 {
@@ -1129,4 +1130,116 @@ section {
         background-color: white;
         color: black;
     }
+}
+
+/* ============================================
+   CONTACT FORM LABELS & STYLING
+   ============================================ */
+
+.form-label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: var(--spacing-md);
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    transition: all var(--transition-normal);
+    resize: none;
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--color-text-tertiary);
+}
+
+.contact-form input[aria-invalid="true"],
+.contact-form textarea[aria-invalid="true"] {
+    border-color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.05);
+}
+
+/* Form Group Spacing */
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Error Message */
+.error-message {
+    font-size: var(--font-size-xs);
+    color: #ff6b6b;
+    margin-top: var(--spacing-xs);
+    display: none;
+}
+
+.error-message:not(:empty) {
+    display: block;
+}
+
+/* Form Status Messages */
+.form-message {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    font-weight: var(--font-weight-semibold);
+    display: none;
+    animation: slideInUp 0.5s ease-out;
+}
+
+.form-message.success {
+    display: block;
+    background-color: rgba(0, 255, 136, 0.1);
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+}
+
+.form-message.error {
+    display: block;
+    background-color: rgba(255, 107, 107, 0.1);
+    border: 1px solid #ff6b6b;
+    color: #ff6b6b;
+}
+
+.form-message.loading {
+    display: block;
+    background-color: rgba(0, 212, 255, 0.1);
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* Submit Button States */
+#submitBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#submitBtn:disabled:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Honeypot Field (hidden) */
+#website {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
 }
